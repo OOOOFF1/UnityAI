@@ -1,4 +1,4 @@
-# ChatGPT x Unity
+# Unity AI
 
 ## 项目简介
 
