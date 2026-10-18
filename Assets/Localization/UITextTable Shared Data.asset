@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UITextTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UITextTable
+  m_TableCollectionNameGuidString: 37ebaea0f9aa80f4199ff71a060d6223
+  m_Entries:
+  - m_Id: 524382785536
+    m_Key: title_history
+    m_Metadata:
+      m_Items: []
+  - m_Id: 532591038464
+    m_Key: label_your_activity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9239341191168
+    m_Key: MessagesSent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9243850067968
+    m_Key: MessagesLeft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9471407837184
+    m_Key: label_roles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9545772847104
+    m_Key: label_language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9856755322880
+    m_Key: btn_chinese
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9935230750720
+    m_Key: btn_english
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10628310126592
+    m_Key: PleaseSelectOperation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10757670850560
+    m_Key: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10759268880384
+    m_Key: Delete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10760392953856
+    m_Key: Add
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11041071583232
+    m_Key: AddRole
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11042896105472
+    m_Key: AddRoleMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11044204728320
+    m_Key: RoleName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11236408709120
+    m_Key: RolePrompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11238963040256
+    m_Key: placeholder_enter_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11242817605632
+    m_Key: AddCategory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11728387985408
+    m_Key: PleaseEnterCategoryName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11729948266496
+    m_Key: RoleCategoryName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11732829753344
+    m_Key: DeleteRole
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11951009058816
+    m_Key: DeleteMessage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11953211068416
+    m_Key: DeleteConversationConfirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 185489095544832
+    m_Key: placeholder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 188349174665216
+    m_Key: TipMsgRunOut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 188457450622976
+    m_Key: BtnWatchVideo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 576297972662272
+    m_Key: ChineseButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 576300149506048
+    m_Key: EnglishButton
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8868131970958753816
+  references:
+    version: 2
+    RefIds:
+    - rid: 8868131970958753816
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1788312030091

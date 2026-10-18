@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UITextTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 37ebaea0f9aa80f4199ff71a060d6223, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 524382785536
+    m_Localized: History
+    m_Metadata:
+      m_Items: []
+  - m_Id: 532591038464
+    m_Localized: Your Activity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9239341191168
+    m_Localized: Messages Sent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9243850067968
+    m_Localized: Messages Left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9471407837184
+    m_Localized: Roles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9545772847104
+    m_Localized: Language Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9856755322880
+    m_Localized: Chinese
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9935230750720
+    m_Localized: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10628310126592
+    m_Localized: Please select an operation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10757670850560
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10759268880384
+    m_Localized: Delete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10760392953856
+    m_Localized: Add
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11041071583232
+    m_Localized: Add Role
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11042896105472
+    m_Localized: Please enter the role name and role prompt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11044204728320
+    m_Localized: 'Role Name:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11236408709120
+    m_Localized: 'Role Prompt:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11238963040256
+    m_Localized: "Enter text\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11242817605632
+    m_Localized: Add Category
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11728387985408
+    m_Localized: Please enter the new role category name.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11729948266496
+    m_Localized: 'Role Category Name:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11732829753344
+    m_Localized: Delete this role?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11951009058816
+    m_Localized: Delete Message
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11953211068416
+    m_Localized: Are you sure you want to delete this conversation?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 185489095544832
+    m_Localized: Enter your prompt here...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 188349174665216
+    m_Localized: Oops! No more messages left!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 188457450622976
+    m_Localized: Watch Video!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 576297972662272
+    m_Localized: Chinese  Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 576300149506048
+    m_Localized: English  Button
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
