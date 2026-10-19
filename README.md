@@ -16,16 +16,18 @@
 所以下载该项目只能体验最基础的功能，体验不到主要功能。可观看相关演示视频。
 
 ## 项目截图
-[游戏初始画面](Screenshots/1.jpg)
-[游戏开始界面](Screenshots/2.jpg)
-[关卡选择界面](Screenshots/3.jpg)
-[游戏运行画面](Screenshots/4.jpg)
+[主界面](Screenshots/5.jpg)
+[语音设置界面](Screenshots/6.jpg)
+[聊天界面](Screenshots/7.jpg)
+[新增角色界面](Screenshots/8.jpg)
+[无消息界面](Screenshots/9.jpg)
+[广告界面](Screenshots/10.jpg)
 
 ## 演示视频
 [点击观看游戏演示](https://b23.tv/wyls72n)
 
 ##Android 下载
-[Gift.zip](https://github.com/OOOOFF1/Gift-Unity-Game/releases/download/v1.0/Gift.zip)
+[Gift.zip](https://github.com/OOOOFF1/UnityAI/releases/tag/v1.0)
 
 ## 开发信息
 - **项目类型**：个人独立项目
