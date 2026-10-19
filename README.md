@@ -16,17 +16,21 @@
 所以下载该项目只能体验最基础的功能，体验不到主要功能。可观看相关演示视频。
 
 ## 项目截图
-待补充。
+[游戏初始画面](Screenshots/1.jpg)
+[游戏开始界面](Screenshots/2.jpg)
+[关卡选择界面](Screenshots/3.jpg)
+[游戏运行画面](Screenshots/4.jpg)
 
 ## 演示视频
-待补充。
+[点击观看游戏演示](https://b23.tv/wyls72n)
 
-## Windows Demo 下载
-待补充。
+##Android 下载
+[Gift.zip](https://github.com/OOOOFF1/Gift-Unity-Game/releases/download/v1.0/Gift.zip)
 
 ## 开发信息
 - **项目类型**：个人独立项目
 - **项目方向**：Unity客户端AI交互应用
+- **开发引擎**：Unity
 - **开发语言**：C#
 
 ## 注意事项
