@@ -31,7 +31,6 @@ public class RewardedVideoButton : MonoBehaviour
         CancelInvoke(nameof(RefreshButtonState));
     }
 
-    //原来每帧执行的逻辑，抽成独立方法
     private void RefreshButtonState()
     {
         if (button == null)
@@ -44,7 +43,7 @@ public class RewardedVideoButton : MonoBehaviour
         {
             //调用AdsManager的方法，查询激励广告是否加载完成
             //true → button.interactable=true 按钮可以点；false→按钮灰色不能点
-            button.interactable =AdsManager.instance.IsRewardedVideoAvailable();
+            button.interactable = AdsManager.instance.IsRewardedVideoAvailable();
         }
         else
         {
@@ -55,6 +54,8 @@ public class RewardedVideoButton : MonoBehaviour
     //按钮点击回调
     public void ButtonClickedCallback()
     {
+        Debug.Log("[RewardedVideoButton] ButtonClickedCallback 已触发");
+
         //防止 AdsManager 不存在
         if (AdsManager.instance == null)
         {

@@ -70,7 +70,7 @@ public class AdsManager : MonoBehaviour
     //LevelPlay SDK 初始化成功
     private void SdkInitializationCompletedEvent(LevelPlayConfiguration configuration)
     {
-        //Debug.Log("LevelPlay SDK 初始化成功。");
+        Debug.Log("LevelPlay SDK 初始化成功。");
         isInitialized = true;
 
         //LevelPlay 初始化成功以后,才能创建 Rewarded Video 广告对象
@@ -134,6 +134,7 @@ public class AdsManager : MonoBehaviour
             return;
         }
 
+        Debug.Log("[LevelPlay] 开始请求加载激励广告");
         //调用 SDK 接口,向 LevelPlay 请求加载广告
         rewardedAd.LoadAd();
     }

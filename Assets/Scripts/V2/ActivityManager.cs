@@ -24,6 +24,9 @@ public class ActivityManager : MonoBehaviour
     private int messagesSent;
     private int messagesLeft;
 
+    // Localization 初始化完成后才允许刷新多语言 UI
+    private bool localizationReady = false;
+
     //本地存储Key：存PlayerPrefs用，相当于文件里的变量名，不能乱改,PlayerPrefs 是 Unity 本地存档，存储数据靠字符串 Key 标记
     //const：常量 →写死不能改的变量，整个运行期间不能赋值修改
     //messagesSentKey（左边，无引号）：变量名，用来代替后面那串文字
@@ -63,18 +66,30 @@ public class ActivityManager : MonoBehaviour
 
     private void Start()
     {
-        LoadData();//读取 PlayerPrefs 本地存档，恢复上次关闭游戏时的消息数据
-        //启动协程，等待本地化系统加载完成，再刷新 UI 文字
-        //这样可以防止刚进入页面时 Localization 还没有准备好
+        LoadData();
+
+        // 等待 Localization 初始化完成后再刷新界面
         StartCoroutine(RefreshUIAfterLocalizationReady());
     }
 
     private IEnumerator RefreshUIAfterLocalizationReady()
     {
-        //等待 Localization 系统初始化完成
-        //LocalizationSettings.InitializationOperation：本地化系统初始化异步操作
+        // 等待 Localization 系统完成初始化
         yield return LocalizationSettings.InitializationOperation;
-        //读取完成以后刷新界面文字、进度条
+
+        // 检查当前语言是否成功选中
+        if (LocalizationSettings.SelectedLocale == null)
+        {
+            Debug.LogError("ActivityManager：Localization 初始化完成，但 SelectedLocale 仍然为空。");
+
+            yield break;
+        }
+
+        localizationReady = true;
+
+        Debug.Log("ActivityManager：Localization 初始化成功，当前语言：" +LocalizationSettings.SelectedLocale.Identifier.Code);
+
+        // 初始化完成后刷新界面
         UpdateUI();
     }
 
@@ -86,6 +101,11 @@ public class ActivityManager : MonoBehaviour
     //语言发生变化以后调用,locale 参数是当前选中的语言包
     private void OnLanguageChanged(UnityEngine.Localization.Locale locale)
     {
+        // 初始化完成之前，不刷新 UI
+        if (!localizationReady || locale == null)
+        {
+            return;
+        }
         //重新刷新 Activity 页面
         UpdateUI();
     }
@@ -107,6 +127,12 @@ public class ActivityManager : MonoBehaviour
 
     private void UpdateUI()
     {
+        // Localization 未准备好时，跳过本次刷新，初始化完成后会再次调用 UpdateUI()
+        if (!localizationReady ||LocalizationSettings.SelectedLocale == null)
+        {
+            return;
+        }
+
         if (messagesSentText == null ||messagesLeftText == null ||usageText == null ||usageFillImage == null)
         {
             Debug.LogWarning("ActivityManager：有UI组件没有绑定。");
@@ -174,9 +200,14 @@ public class ActivityManager : MonoBehaviour
     //从Unity Localization String Table获取文字
     private string GetLocalizedText(string key)
     {
+        // 防止 Localization 尚未准备好时读取字符串表
+        if (!localizationReady ||LocalizationSettings.SelectedLocale == null)
+        {
+            return "";
+        }
+
         try
         {
-            //参数 1：本地化字符串表名字,参数 2：表格里面的 Key 字段
             return LocalizationSettings.StringDatabase.GetLocalizedString("UITextTable", key);
         }
         catch (System.Exception ex)
